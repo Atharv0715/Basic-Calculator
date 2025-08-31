@@ -1,0 +1,79 @@
+/* General Page Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Calculator Container */
+.calculator {
+  width: 320px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Display */
+.display {
+  background: #222;
+  padding: 20px;
+}
+.display input {
+  width: 100%;
+  font-size: 2rem;
+  text-align: right;
+  border: none;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+/* Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 15px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background: #f1f3f6;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #dfe4ea;
+}
+
+.operator {
+  background: #ffb142;
+  color: white;
+}
+
+.operator:hover {
+  background: #ff9f1a;
+}
+
+.equals {
+  background: #2ed573;
+  color: white;
+  grid-row: span 2;
+}
+
+.equals:hover {
+  background: #1eae60;
+}
+
+.zero {
+  grid-column: span 2;
+}
